@@ -1,10 +1,10 @@
 exports.seed = function (knex) {
 	// Deletes ALL existing entries
-	return knex('table_name')
+	return knex('characters')
 		.truncate()
 		.then(function () {
 			// Inserts seed entries
-			return knex('table_name').insert([
+			return knex('characters').insert([
 				{ id: 1, name: 'Balki', show: 'Perfect Strangers' },
 				{ id: 2, name: 'Joey', show: 'Blossom' },
 				{ id: 3, name: 'Captain Picard', show: 'Star Trek: TNG' },
